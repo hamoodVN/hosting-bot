@@ -1,5 +1,5 @@
 {
-  "name": "AFK Bot",
+  "name": "Herobrine Stalker Bot",
   "bot-account": {
     "username": "herobrine",
     "password": "",
@@ -28,53 +28,78 @@
     "chat-messages": {
       "enabled": true,
       "repeat": true,
-      "repeat-delay": 500,
+      "repeat-delay": 180000,
       "messages": [
-        "I'm a regular player",
-        "Subscribe to Slobos!",
-        "I like to play Minecraft!"
+        "§4You shouldn't have come here.",
+        "§k000000000000",
+        "It is behind you.",
+        "Only God can save you now.",
+        "This world is mine.",
+        "§4WAKE UP."
       ]
     },
     "chat-log": true,
     "auto-reconnect": true,
-    "auto-reconnect-delay": 2000,
-    "max-reconnect-delay": 20000,
+    "auto-reconnect-delay": 10000,
+    "max-reconnect-delay": 60000,
     "periodic-rejoin": {
       "enabled": true,
-      "min-interval": 20,
-      "max-interval": 60
+      "min-interval": 45,
+      "max-interval": 90
     }
   },
   "movement": {
     "enabled": true,
     "circle-walk": {
-      "enabled": true,
-      "radius": 4,
-      "speed": 3000
+      "enabled": false,
+      "radius": 0,
+      "speed": 0
     },
     "look-around": {
       "enabled": true,
-      "interval": 5000
+      "interval": 3000
     },
     "random-jump": {
-      "enabled": true,
-      "interval": 10000
+      "enabled": false,
+      "interval": 0
     }
   },
   "modules": {
     "avoidMobs": true,
-    "combat": true,
-    "beds": true,
+    "combat": false,
+    "beds": false,
     "chat": true,
-    "console-commands": true
+    "console-commands": true,
+    "stalking": true,
+    "supernatural-skills": true
+  },
+  "skills": {
+    "burn-lightning": {
+      "enabled": true,
+      "trigger-on-look": true,
+      "strike-chance": 0.15,
+      "cooldown": 12000
+    },
+    "blindness-aura": {
+      "enabled": true,
+      "radius": 8,
+      "effect-duration": 100,
+      "apply-on-approach": true
+    },
+    "fog-stalk": {
+      "enabled": true,
+      "keep-distance-min": 15,
+      "keep-distance-max": 30,
+      "vanish-on-hit": true
+    }
   },
   "combat": {
-    "attack-mobs": true,
-    "auto-eat": true
+    "attack-mobs": false,
+    "auto-eat": false
   },
   "beds": {
-    "pick-up-day": true,
-    "place-night": true
+    "pick-up-day": false,
+    "place-night": false
   },
   "discord": {
     "enabled": true,
@@ -86,6 +111,16 @@
     }
   },
   "chat": {
-    "respond": true
+    "respond": true,
+    "custom-triggers": [
+      {
+        "trigger": "who are you",
+        "response": "Your creator."
+      },
+      {
+        "trigger": "herobrine",
+        "response": "§4I am here."
+      }
+    ]
   }
 }
