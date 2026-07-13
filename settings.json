@@ -30,12 +30,12 @@
       "repeat": true,
       "repeat-delay": 180000,
       "messages": [
-        "§4You shouldn't have come here.",
-        "§k000000000000",
+        "<red>You shouldn't have come here.",
+        "<obfuscated>000000000000",
         "It is behind you.",
         "Only God can save you now.",
         "This world is mine.",
-        "§4WAKE UP."
+        "<red>WAKE UP."
       ]
     },
     "chat-log": true,
@@ -119,7 +119,7 @@
       },
       {
         "trigger": "herobrine",
-        "response": "§4I am here."
+        "response": "<red>I am here."
       }
     ]
   }
