@@ -12,14 +12,14 @@
   },
   "position": {
     "enabled": true,
-    "x": 0,
-    "y": 100,
-    "z": 0
+    "x": -113,
+    "y": 63,
+    "z": -178
   },
   "utils": {
     "auto-auth": {
-      "enabled": true,
-      "password": "Slobos"
+      "enabled": false,
+      "password": ""
     },
     "anti-afk": {
       "enabled": true,
@@ -40,10 +40,10 @@
     },
     "chat-log": true,
     "auto-reconnect": true,
-    "auto-reconnect-delay": 10000,
-    "max-reconnect-delay": 60000,
+    "auto-reconnect-delay": 5000,
+    "max-reconnect-delay": 20000,
     "periodic-rejoin": {
-      "enabled": true,
+      "enabled": false,
       "min-interval": 45,
       "max-interval": 90
     }
@@ -69,7 +69,7 @@
     "combat": false,
     "beds": false,
     "chat": true,
-    "console-commands": true,
+    "console-commands": false,
     "stalking": true,
     "supernatural-skills": true
   },
@@ -102,11 +102,11 @@
     "place-night": false
   },
   "discord": {
-    "enabled": true,
-    "webhookUrl": "https://discord.com/api/webhooks/1472567640521183243/7DzSIaCSM_9-5DjzrlAuP9Tdj7Y3yAP6BHg3scKzhaRFdVk8ctWBlhOc7I8l5xC6Nqm3",
+    "enabled": false,
+    "webhookUrl": "",
     "events": {
-      "connect": true,
-      "disconnect": true,
+      "connect": false,
+      "disconnect": false,
       "chat": false
     }
   },
