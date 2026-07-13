@@ -1,5 +1,5 @@
 {
-  "name": "Herobrine Stalker Bot",
+  "name": "Herobrine Phantom Bot",
   "bot-account": {
     "username": "herobrine",
     "password": "",
@@ -8,7 +8,8 @@
   "server": {
     "ip": "hamood170809-fFBx.aternos.me",
     "port": 42056,
-    "version": "1.19.2"
+    "version": "1.19.2",
+    "try-creative": false
   },
   "position": {
     "enabled": true,
@@ -28,7 +29,7 @@
     "chat-messages": {
       "enabled": true,
       "repeat": true,
-      "repeat-delay": 180000,
+      "repeat-delay": 300000,
       "messages": [
         "<red>You shouldn't have come here.",
         "<obfuscated>000000000000",
@@ -38,14 +39,14 @@
         "<red>WAKE UP."
       ]
     },
-    "chat-log": true,
+    "chat-log": false,
     "auto-reconnect": true,
-    "auto-reconnect-delay": 5000,
-    "max-reconnect-delay": 20000,
+    "auto-reconnect-delay": 10000,
+    "max-reconnect-delay": 30000,
     "periodic-rejoin": {
       "enabled": false,
-      "min-interval": 45,
-      "max-interval": 90
+      "min-interval": 0,
+      "max-interval": 0
     }
   },
   "movement": {
@@ -57,7 +58,7 @@
     },
     "look-around": {
       "enabled": true,
-      "interval": 3000
+      "interval": 4000
     },
     "random-jump": {
       "enabled": false,
@@ -78,18 +79,18 @@
       "enabled": true,
       "trigger-on-look": true,
       "strike-chance": 0.15,
-      "cooldown": 12000
+      "cooldown": 15000
     },
     "blindness-aura": {
       "enabled": true,
-      "radius": 8,
-      "effect-duration": 100,
+      "radius": 6,
+      "effect-duration": 120,
       "apply-on-approach": true
     },
     "fog-stalk": {
       "enabled": true,
-      "keep-distance-min": 15,
-      "keep-distance-max": 30,
+      "keep-distance-min": 18,
+      "keep-distance-max": 32,
       "vanish-on-hit": true
     }
   },
